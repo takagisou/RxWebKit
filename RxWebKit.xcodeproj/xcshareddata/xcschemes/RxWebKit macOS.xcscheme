@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "26332835231F10EA0088DD38"
-               BuildableName = "RxWebKit_macOS.framework"
-               BlueprintName = "RxWebKit-macOS"
+               BuildableName = "RxWebKit.framework"
+               BlueprintName = "RxWebKit macOS"
                ReferencedContainer = "container:RxWebKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2633283D231F10EA0088DD38"
-               BuildableName = "RxWebKit-macOSTests.xctest"
-               BlueprintName = "RxWebKit-macOSTests"
+               BuildableName = "RxWebKit macOS Tests.xctest"
+               BlueprintName = "RxWebKit macOS Tests"
                ReferencedContainer = "container:RxWebKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "26332835231F10EA0088DD38"
-            BuildableName = "RxWebKit_macOS.framework"
-            BlueprintName = "RxWebKit-macOS"
+            BuildableName = "RxWebKit.framework"
+            BlueprintName = "RxWebKit macOS"
             ReferencedContainer = "container:RxWebKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,8 +65,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "26332835231F10EA0088DD38"
-            BuildableName = "RxWebKit_macOS.framework"
-            BlueprintName = "RxWebKit-macOS"
+            BuildableName = "RxWebKit.framework"
+            BlueprintName = "RxWebKit macOS"
             ReferencedContainer = "container:RxWebKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -83,8 +83,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "26332835231F10EA0088DD38"
-            BuildableName = "RxWebKit_macOS.framework"
-            BlueprintName = "RxWebKit-macOS"
+            BuildableName = "RxWebKit.framework"
+            BlueprintName = "RxWebKit macOS"
             ReferencedContainer = "container:RxWebKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
