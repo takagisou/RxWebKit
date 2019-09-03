@@ -18,7 +18,7 @@ extension Reactive where Base: WKWebView {
     public typealias JSConfirmEvent = (webView: WKWebView, message: String, frame: WKFrameInfo, handler: (Bool) -> ())
     #if os(iOS)
     @available(iOS 10.0, *)
-    public typealias CommitPreviewEvent = (webView: WKWebView, controller: OSViewController)
+    public typealias CommitPreviewEvent = (webView: WKWebView, controller: UIViewController)
     #endif
     
     /// Reactive wrapper for `navigationDelegate`.
