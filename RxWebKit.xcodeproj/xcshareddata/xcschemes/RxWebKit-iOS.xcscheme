@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "42F426CD1C6623C5001FED46"
-               BuildableName = "RxWebKit.framework"
-               BlueprintName = "RxWebKit"
+               BuildableName = "RxWebKit-iOS.framework"
+               BlueprintName = "RxWebKit-iOS"
                ReferencedContainer = "container:RxWebKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "42F426CD1C6623C5001FED46"
-            BuildableName = "RxWebKit.framework"
-            BlueprintName = "RxWebKit"
+            BuildableName = "RxWebKit-iOS.framework"
+            BlueprintName = "RxWebKit-iOS"
             ReferencedContainer = "container:RxWebKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,8 +55,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "42F426CD1C6623C5001FED46"
-            BuildableName = "RxWebKit.framework"
-            BlueprintName = "RxWebKit"
+            BuildableName = "RxWebKit-iOS.framework"
+            BlueprintName = "RxWebKit-iOS"
             ReferencedContainer = "container:RxWebKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -73,8 +73,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "42F426CD1C6623C5001FED46"
-            BuildableName = "RxWebKit.framework"
-            BlueprintName = "RxWebKit"
+            BuildableName = "RxWebKit-iOS.framework"
+            BlueprintName = "RxWebKit-iOS"
             ReferencedContainer = "container:RxWebKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

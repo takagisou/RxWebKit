@@ -24,7 +24,7 @@
 		42F426B91C66223E001FED46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F426B21C66223E001FED46 /* Main.storyboard */; };
 		42F426BA1C66223E001FED46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F426B41C66223E001FED46 /* ViewController.swift */; };
 		42F426D11C6623C5001FED46 /* RxWebKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F426D01C6623C5001FED46 /* RxWebKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42F426D61C6623C5001FED46 /* RxWebKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42F426CE1C6623C5001FED46 /* RxWebKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42F426D61C6623C5001FED46 /* RxWebKit-iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42F426CE1C6623C5001FED46 /* RxWebKit-iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		42F426DC1C662CF9001FED46 /* Rx+WebKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F426DB1C662CF9001FED46 /* Rx+WebKit.swift */; };
 		C4135FFE22875FBE0061933C /* RxWebKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB7D5322874EE700FB8D99 /* RxWebKitTests.swift */; };
 		C4136011228764840061933C /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4D323B3228748A0004B05A5 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -86,7 +86,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				42F426D61C6623C5001FED46 /* RxWebKit.framework in Embed Frameworks */,
+				42F426D61C6623C5001FED46 /* RxWebKit-iOS.framework in Embed Frameworks */,
 				C413602522896CC20061933C /* RxSwift.framework in Embed Frameworks */,
 				C413602622896CC20061933C /* RxCocoa.framework in Embed Frameworks */,
 				C413602722896CE20061933C /* RxRelay.framework in Embed Frameworks */,
@@ -132,7 +132,7 @@
 		42F426B11C66223E001FED46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42F426B31C66223E001FED46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42F426B41C66223E001FED46 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		42F426CE1C6623C5001FED46 /* RxWebKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxWebKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42F426CE1C6623C5001FED46 /* RxWebKit-iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "RxWebKit-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42F426D01C6623C5001FED46 /* RxWebKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxWebKit.h; sourceTree = "<group>"; };
 		42F426D21C6623C5001FED46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42F426DB1C662CF9001FED46 /* Rx+WebKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Rx+WebKit.swift"; sourceTree = "<group>"; };
@@ -257,7 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				42F426971C66200D001FED46 /* Example.app */,
-				42F426CE1C6623C5001FED46 /* RxWebKit.framework */,
+				42F426CE1C6623C5001FED46 /* RxWebKit-iOS.framework */,
 				C4CB7D4322874E5600FB8D99 /* RxWebKitTests.xctest */,
 				26332836231F10EA0088DD38 /* RxWebKit_macOS.framework */,
 				2633283E231F10EA0088DD38 /* RxWebKit-macOSTests.xctest */,
@@ -414,9 +414,9 @@
 			productReference = 42F426971C66200D001FED46 /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		42F426CD1C6623C5001FED46 /* RxWebKit */ = {
+		42F426CD1C6623C5001FED46 /* RxWebKit-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42F426D71C6623C5001FED46 /* Build configuration list for PBXNativeTarget "RxWebKit" */;
+			buildConfigurationList = 42F426D71C6623C5001FED46 /* Build configuration list for PBXNativeTarget "RxWebKit-iOS" */;
 			buildPhases = (
 				42F426C91C6623C5001FED46 /* Sources */,
 				42F426CA1C6623C5001FED46 /* Frameworks */,
@@ -427,9 +427,9 @@
 			);
 			dependencies = (
 			);
-			name = RxWebKit;
+			name = "RxWebKit-iOS";
 			productName = RxWebKit;
-			productReference = 42F426CE1C6623C5001FED46 /* RxWebKit.framework */;
+			productReference = 42F426CE1C6623C5001FED46 /* RxWebKit-iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C4CB7D4222874E5600FB8D99 /* RxWebKitTests */ = {
@@ -501,7 +501,7 @@
 			projectRoot = "";
 			targets = (
 				42F426961C66200D001FED46 /* Example */,
-				42F426CD1C6623C5001FED46 /* RxWebKit */,
+				42F426CD1C6623C5001FED46 /* RxWebKit-iOS */,
 				C4CB7D4222874E5600FB8D99 /* RxWebKitTests */,
 				26332835231F10EA0088DD38 /* RxWebKit-macOS */,
 				2633283D231F10EA0088DD38 /* RxWebKit-macOSTests */,
@@ -622,12 +622,12 @@
 		};
 		42F426D41C6623C5001FED46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 42F426CD1C6623C5001FED46 /* RxWebKit */;
+			target = 42F426CD1C6623C5001FED46 /* RxWebKit-iOS */;
 			targetProxy = 42F426D31C6623C5001FED46 /* PBXContainerItemProxy */;
 		};
 		C4CB7D4A22874E5600FB8D99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 42F426CD1C6623C5001FED46 /* RxWebKit */;
+			target = 42F426CD1C6623C5001FED46 /* RxWebKit-iOS */;
 			targetProxy = C4CB7D4922874E5600FB8D99 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -683,7 +683,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.takagisou.RxWebKit-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = mokumoku.RxWebKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -722,7 +723,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.takagisou.RxWebKit-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = mokumoku.RxWebKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -948,6 +950,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mokumoku.RxWebKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -977,6 +980,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mokumoku.RxWebKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1083,7 +1087,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42F426D71C6623C5001FED46 /* Build configuration list for PBXNativeTarget "RxWebKit" */ = {
+		42F426D71C6623C5001FED46 /* Build configuration list for PBXNativeTarget "RxWebKit-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42F426D81C6623C5001FED46 /* Debug */,
