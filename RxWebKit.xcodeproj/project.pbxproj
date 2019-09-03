@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26332804231F036F0088DD38 /* Rx+WebKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F426DB1C662CF9001FED46 /* Rx+WebKit.swift */; };
-		26332805231F036F0088DD38 /* WKNavigationDelegateEvents+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48E61831F9E336000C6A753 /* WKNavigationDelegateEvents+Rx.swift */; };
-		26332806231F036F0088DD38 /* RxWKNavigationDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48E617D1F9E27A700C6A753 /* RxWKNavigationDelegateProxy.swift */; };
-		26332807231F036F0088DD38 /* RxWKUIDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4607FCF1FA0DAC9002DA12F /* RxWKUIDelegateProxy.swift */; };
-		26332808231F036F0088DD38 /* RxWKUIDelegateEvents+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4607FD51FA0DC40002DA12F /* RxWKUIDelegateEvents+Rx.swift */; };
-		26332809231F036F0088DD38 /* RxWKUserContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D7DD0C224F62860066C90F /* RxWKUserContentController.swift */; };
-		26332810231F053D0088DD38 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2633280E231F053D0088DD38 /* RxSwift.framework */; };
-		26332811231F053D0088DD38 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2633280F231F053D0088DD38 /* RxCocoa.framework */; };
-		26332813231F0BB50088DD38 /* RxWebKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F426D01C6623C5001FED46 /* RxWebKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2633283F231F10EA0088DD38 /* RxWebKit_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26332836231F10EA0088DD38 /* RxWebKit_macOS.framework */; };
+		26332844231F10EA0088DD38 /* RxWebKit_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26332843231F10EA0088DD38 /* RxWebKit_macOSTests.swift */; };
+		2633284D231F112C0088DD38 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2633280F231F053D0088DD38 /* RxCocoa.framework */; };
+		2633284E231F112C0088DD38 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2633280E231F053D0088DD38 /* RxSwift.framework */; };
+		2633284F231F113A0088DD38 /* RxWebKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F426D01C6623C5001FED46 /* RxWebKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26332850231F11430088DD38 /* Rx+WebKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F426DB1C662CF9001FED46 /* Rx+WebKit.swift */; };
+		26332851231F11430088DD38 /* WKNavigationDelegateEvents+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48E61831F9E336000C6A753 /* WKNavigationDelegateEvents+Rx.swift */; };
+		26332852231F11440088DD38 /* RxWKNavigationDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48E617D1F9E27A700C6A753 /* RxWKNavigationDelegateProxy.swift */; };
+		26332853231F11440088DD38 /* RxWKUIDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4607FCF1FA0DAC9002DA12F /* RxWKUIDelegateProxy.swift */; };
+		26332854231F11440088DD38 /* RxWKUIDelegateEvents+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4607FD51FA0DC40002DA12F /* RxWKUIDelegateEvents+Rx.swift */; };
+		26332855231F11440088DD38 /* RxWKUserContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D7DD0C224F62860066C90F /* RxWKUserContentController.swift */; };
 		42F426B61C66223E001FED46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F426AD1C66223E001FED46 /* AppDelegate.swift */; };
 		42F426B71C66223E001FED46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42F426AE1C66223E001FED46 /* Assets.xcassets */; };
 		42F426B81C66223E001FED46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F426B01C66223E001FED46 /* LaunchScreen.storyboard */; };
@@ -54,6 +56,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		26332840231F10EA0088DD38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42F4268F1C66200D001FED46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26332835231F10EA0088DD38;
+			remoteInfo = "RxWebKit-macOS";
+		};
 		42F426D31C6623C5001FED46 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 42F4268F1C66200D001FED46 /* Project object */;
@@ -104,13 +113,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		263327FB231F03110088DD38 /* libRxWebKit-macOS.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libRxWebKit-macOS.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
-		263327FD231F03110088DD38 /* RxWebKit_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxWebKit_macOS.h; sourceTree = "<group>"; };
-		263327FF231F03110088DD38 /* RxWebKit_macOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RxWebKit_macOS.m; sourceTree = "<group>"; };
 		2633280A231F05190088DD38 /* RxSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxSwift.framework.dSYM; path = Carthage/Build/Mac/RxSwift.framework.dSYM; sourceTree = "<group>"; };
 		2633280B231F05190088DD38 /* RxCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxCocoa.framework.dSYM; path = Carthage/Build/Mac/RxCocoa.framework.dSYM; sourceTree = "<group>"; };
 		2633280E231F053D0088DD38 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
 		2633280F231F053D0088DD38 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = "<group>"; };
+		26332836231F10EA0088DD38 /* RxWebKit_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxWebKit_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26332838231F10EA0088DD38 /* RxWebKit_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxWebKit_macOS.h; sourceTree = "<group>"; };
+		26332839231F10EA0088DD38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2633283E231F10EA0088DD38 /* RxWebKit-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxWebKit-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26332843231F10EA0088DD38 /* RxWebKit_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxWebKit_macOSTests.swift; sourceTree = "<group>"; };
+		26332845231F10EA0088DD38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		424205831C89E9DF00214DA1 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		424205841C89E9DF00214DA1 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		42F426971C66200D001FED46 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,12 +166,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		263327F9231F03110088DD38 /* Frameworks */ = {
+		26332833231F10EA0088DD38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26332810231F053D0088DD38 /* RxSwift.framework in Frameworks */,
-				26332811231F053D0088DD38 /* RxCocoa.framework in Frameworks */,
+				2633284D231F112C0088DD38 /* RxCocoa.framework in Frameworks */,
+				2633284E231F112C0088DD38 /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2633283B231F10EA0088DD38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2633283F231F10EA0088DD38 /* RxWebKit_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,13 +209,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		263327FC231F03110088DD38 /* RxWebKit-macOS */ = {
+		26332837231F10EA0088DD38 /* RxWebKit-macOS */ = {
 			isa = PBXGroup;
 			children = (
-				263327FD231F03110088DD38 /* RxWebKit_macOS.h */,
-				263327FF231F03110088DD38 /* RxWebKit_macOS.m */,
+				26332838231F10EA0088DD38 /* RxWebKit_macOS.h */,
+				26332839231F10EA0088DD38 /* Info.plist */,
 			);
 			path = "RxWebKit-macOS";
+			sourceTree = "<group>";
+		};
+		26332842231F10EA0088DD38 /* RxWebKit-macOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				26332843231F10EA0088DD38 /* RxWebKit_macOSTests.swift */,
+				26332845231F10EA0088DD38 /* Info.plist */,
+			);
+			path = "RxWebKit-macOSTests";
 			sourceTree = "<group>";
 		};
 		42B12EFB1C6DFC7600C280BD /* Sources */ = {
@@ -215,7 +244,8 @@
 			isa = PBXGroup;
 			children = (
 				42F426991C66200D001FED46 /* Example */,
-				263327FC231F03110088DD38 /* RxWebKit-macOS */,
+				26332837231F10EA0088DD38 /* RxWebKit-macOS */,
+				26332842231F10EA0088DD38 /* RxWebKit-macOSTests */,
 				733B51F3D0F2B4B1E9A99FDC /* Frameworks */,
 				42F426981C66200D001FED46 /* Products */,
 				42F426CF1C6623C5001FED46 /* RxWebKit */,
@@ -229,7 +259,8 @@
 				42F426971C66200D001FED46 /* Example.app */,
 				42F426CE1C6623C5001FED46 /* RxWebKit.framework */,
 				C4CB7D4322874E5600FB8D99 /* RxWebKitTests.xctest */,
-				263327FB231F03110088DD38 /* libRxWebKit-macOS.dylib */,
+				26332836231F10EA0088DD38 /* RxWebKit_macOS.framework */,
+				2633283E231F10EA0088DD38 /* RxWebKit-macOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -309,11 +340,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		263327F7231F03110088DD38 /* Headers */ = {
+		26332831231F10EA0088DD38 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26332813231F0BB50088DD38 /* RxWebKit.h in Headers */,
+				2633284F231F113A0088DD38 /* RxWebKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,13 +359,14 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		263327FA231F03110088DD38 /* RxWebKit-macOS */ = {
+		26332835231F10EA0088DD38 /* RxWebKit-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 26332803231F03110088DD38 /* Build configuration list for PBXNativeTarget "RxWebKit-macOS" */;
+			buildConfigurationList = 26332847231F10EA0088DD38 /* Build configuration list for PBXNativeTarget "RxWebKit-macOS" */;
 			buildPhases = (
-				263327F7231F03110088DD38 /* Headers */,
-				263327F8231F03110088DD38 /* Sources */,
-				263327F9231F03110088DD38 /* Frameworks */,
+				26332831231F10EA0088DD38 /* Headers */,
+				26332832231F10EA0088DD38 /* Sources */,
+				26332833231F10EA0088DD38 /* Frameworks */,
+				26332834231F10EA0088DD38 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -342,8 +374,26 @@
 			);
 			name = "RxWebKit-macOS";
 			productName = "RxWebKit-macOS";
-			productReference = 263327FB231F03110088DD38 /* libRxWebKit-macOS.dylib */;
-			productType = "com.apple.product-type.library.dynamic";
+			productReference = 26332836231F10EA0088DD38 /* RxWebKit_macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2633283D231F10EA0088DD38 /* RxWebKit-macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2633284A231F10EA0088DD38 /* Build configuration list for PBXNativeTarget "RxWebKit-macOSTests" */;
+			buildPhases = (
+				2633283A231F10EA0088DD38 /* Sources */,
+				2633283B231F10EA0088DD38 /* Frameworks */,
+				2633283C231F10EA0088DD38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26332841231F10EA0088DD38 /* PBXTargetDependency */,
+			);
+			name = "RxWebKit-macOSTests";
+			productName = "RxWebKit-macOSTests";
+			productReference = 2633283E231F10EA0088DD38 /* RxWebKit-macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		42F426961C66200D001FED46 /* Example */ = {
 			isa = PBXNativeTarget;
@@ -407,11 +457,15 @@
 		42F4268F1C66200D001FED46 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = MokuMokuCloud;
 				TargetAttributes = {
-					263327FA231F03110088DD38 = {
+					26332835231F10EA0088DD38 = {
+						CreatedOnToolsVersion = 10.3;
+						ProvisioningStyle = Automatic;
+					};
+					2633283D231F10EA0088DD38 = {
 						CreatedOnToolsVersion = 10.3;
 						ProvisioningStyle = Automatic;
 					};
@@ -449,12 +503,27 @@
 				42F426961C66200D001FED46 /* Example */,
 				42F426CD1C6623C5001FED46 /* RxWebKit */,
 				C4CB7D4222874E5600FB8D99 /* RxWebKitTests */,
-				263327FA231F03110088DD38 /* RxWebKit-macOS */,
+				26332835231F10EA0088DD38 /* RxWebKit-macOS */,
+				2633283D231F10EA0088DD38 /* RxWebKit-macOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		26332834231F10EA0088DD38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2633283C231F10EA0088DD38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42F426951C66200D001FED46 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -482,16 +551,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		263327F8231F03110088DD38 /* Sources */ = {
+		26332832231F10EA0088DD38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26332804231F036F0088DD38 /* Rx+WebKit.swift in Sources */,
-				26332805231F036F0088DD38 /* WKNavigationDelegateEvents+Rx.swift in Sources */,
-				26332806231F036F0088DD38 /* RxWKNavigationDelegateProxy.swift in Sources */,
-				26332807231F036F0088DD38 /* RxWKUIDelegateProxy.swift in Sources */,
-				26332808231F036F0088DD38 /* RxWKUIDelegateEvents+Rx.swift in Sources */,
-				26332809231F036F0088DD38 /* RxWKUserContentController.swift in Sources */,
+				26332850231F11430088DD38 /* Rx+WebKit.swift in Sources */,
+				26332851231F11430088DD38 /* WKNavigationDelegateEvents+Rx.swift in Sources */,
+				26332852231F11440088DD38 /* RxWKNavigationDelegateProxy.swift in Sources */,
+				26332853231F11440088DD38 /* RxWKUIDelegateProxy.swift in Sources */,
+				26332854231F11440088DD38 /* RxWKUIDelegateEvents+Rx.swift in Sources */,
+				26332855231F11440088DD38 /* RxWKUserContentController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2633283A231F10EA0088DD38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26332844231F10EA0088DD38 /* RxWebKit_macOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +615,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		26332841231F10EA0088DD38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26332835231F10EA0088DD38 /* RxWebKit-macOS */;
+			targetProxy = 26332840231F10EA0088DD38 /* PBXContainerItemProxy */;
+		};
 		42F426D41C6623C5001FED46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 42F426CD1C6623C5001FED46 /* RxWebKit */;
@@ -572,7 +654,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		26332801231F03110088DD38 /* Debug */ = {
+		26332848231F10EA0088DD38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
@@ -583,24 +665,36 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				EXECUTABLE_PREFIX = lib;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
+				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "RxWebKit-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.takagisou.RxWebKit-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		26332802231F03110088DD38 /* Release */ = {
+		26332849231F10EA0088DD38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
@@ -611,19 +705,84 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				EXECUTABLE_PREFIX = lib;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
+				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "RxWebKit-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.takagisou.RxWebKit-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2633284B231F10EA0088DD38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "RxWebKit-macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.takagisou.RxWebKit-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2633284C231F10EA0088DD38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "RxWebKit-macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.takagisou.RxWebKit-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -888,11 +1047,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		26332803231F03110088DD38 /* Build configuration list for PBXNativeTarget "RxWebKit-macOS" */ = {
+		26332847231F10EA0088DD38 /* Build configuration list for PBXNativeTarget "RxWebKit-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				26332801231F03110088DD38 /* Debug */,
-				26332802231F03110088DD38 /* Release */,
+				26332848231F10EA0088DD38 /* Debug */,
+				26332849231F10EA0088DD38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2633284A231F10EA0088DD38 /* Build configuration list for PBXNativeTarget "RxWebKit-macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2633284B231F10EA0088DD38 /* Debug */,
+				2633284C231F10EA0088DD38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -6,8 +6,14 @@
 //  Copyright © 2019 MokuMokuCloud. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <Cocoa/Cocoa.h>
 
-@interface RxWebKit_macOS : NSObject
+//! Project version number for RxWebKit_macOS.
+FOUNDATION_EXPORT double RxWebKit_macOSVersionNumber;
 
-@end
+//! Project version string for RxWebKit_macOS.
+FOUNDATION_EXPORT const unsigned char RxWebKit_macOSVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <RxWebKit_macOS/PublicHeader.h>
+
+
