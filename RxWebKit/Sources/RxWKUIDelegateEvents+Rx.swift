@@ -16,7 +16,10 @@ import WebKit
 extension Reactive where Base: WKWebView {
     public typealias JSAlertEvent = (webView: WKWebView, message: String, frame: WKFrameInfo, handler: () -> ())
     public typealias JSConfirmEvent = (webView: WKWebView, message: String, frame: WKFrameInfo, handler: (Bool) -> ())
-    public typealias CommitPreviewEvent = (webView: WKWebView, controller: UIViewController)
+    #if os(iOS)
+    @available(iOS 10.0, *)
+    public typealias CommitPreviewEvent = (webView: WKWebView, controller: OSViewController)
+    #endif
     
     /// Reactive wrapper for `navigationDelegate`.
     public var uiDelegate: DelegateProxy<WKWebView, WKUIDelegate> {
@@ -66,6 +69,7 @@ extension Reactive where Base: WKWebView {
     }
     
     /// Reactive wrappper for `func webView(_ webView: WKWebView, commitPreviewingViewController previewingViewController: UIViewController)`
+    #if os(iOS)
     @available(iOS 10.0, *)
     public var commitPreviewing: ControlEvent<CommitPreviewEvent> {
         let source: Observable<CommitPreviewEvent> = uiDelegate
@@ -78,11 +82,14 @@ extension Reactive where Base: WKWebView {
         
         return ControlEvent(events: source)
     }
+    #endif
 }
 
 fileprivate extension Selector {
     static let jsAlert = #selector(WKUIDelegate.webView(_:runJavaScriptAlertPanelWithMessage:initiatedByFrame:completionHandler:))
     static let jsConfirm = #selector(WKUIDelegate.webView(_:runJavaScriptConfirmPanelWithMessage:initiatedByFrame:completionHandler:))
+    #if os(iOS)
     @available(iOS 10.0, *)
     static let commitPreviewing = #selector(WKUIDelegate.webView(_:commitPreviewingViewController:))
+    #endif
 }
